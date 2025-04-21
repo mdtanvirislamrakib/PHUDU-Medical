@@ -25,10 +25,10 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-8 text-lg lg:text-xl font-semibold">
-                    <NavLink to='/' className="hover:text-indigo-500">Home</NavLink>
-                    <NavLink to="/my-booking" className="hover:text-indigo-500">My-Booking</NavLink>
-                    <NavLink to="/blogs" className="hover:text-indigo-500">Blogs</NavLink>
-                    <NavLink to="/contact" className="hover:text-indigo-500">Contact</NavLink>
+                    <NavLink to='/'className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Home</NavLink>
+                    <NavLink to="/my-booking" className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>My-Booking</NavLink>
+                    <NavLink to="/blogs" className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Blogs</NavLink>
+                    <NavLink to="/contact" className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Contact</NavLink>
                 </ul>
             </div>
             <div className="navbar-end">

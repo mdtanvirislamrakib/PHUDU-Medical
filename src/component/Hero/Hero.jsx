@@ -15,7 +15,7 @@ const Hero = () => {
 
                 <div className='flex items-center justify-center gap-8'>
                     <img src={bannerImage} alt="" />
-                    <img src={bannerImage} alt="" />
+                    <img src={bannerImage} alt="" className='hidden lg:block' />
                 </div>
 
             </div>
