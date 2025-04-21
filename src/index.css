@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.hero-background {
+    background: linear-gradient(180.00deg, rgba(255, 255, 255, 0),rgb(255, 255, 255) 100%);
+}
