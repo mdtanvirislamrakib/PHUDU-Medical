@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import DoctorCard from '../DoctorCard/DoctorCard';
 
-const DoctorsContainer = ({ data }) => {
+const DoctorsContainer = ({ doctors }) => {
     const [displayDoctors, setDisplayDoctors] = useState([]);
     const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
         if (showAll) {
-            setDisplayDoctors(data);
+            setDisplayDoctors(doctors);
         } else {
-            setDisplayDoctors(data.slice(0, 6))
+            setDisplayDoctors(doctors.slice(0, 6))
         }
-    }, [data, showAll])
+    }, [doctors, showAll])
     return (
         <div className='py-10 lg:py-20'>
             <h1 className=' text-2xl lg:text-4xl font-bold text-center mb-3'>Our Doctors</h1>
