@@ -1,11 +1,12 @@
 import React from 'react';
 import { FaRegRegistered } from "react-icons/fa6";
+import { Link } from 'react-router';
 
 const DoctorCard = ({ doctor }) => {
     return (
         <div>
             <div className="card bg-base-100 shadow-sm pt-5">
-                <figure className='image-bg w-5/6 mx-auto rounded-2xl' >
+                <figure className='bg-gradient-to-r from-sky-400 to-cyan-300 w-5/6 mx-auto rounded-2xl' >
                     <img
                         src={doctor.image}
                         alt="Shoes" className='w-[200px] h-[200px]' />
@@ -22,7 +23,10 @@ const DoctorCard = ({ doctor }) => {
                         <FaRegRegistered />
                         <p>Reg No: {doctor.registration_number}</p>
                     </div>
-                    <button className='w-full hover:bg-indigo-500 hover:text-white font-bold text-xl h-10 border border-indigo-600 rounded-3xl text-indigo-600 transition-all cursor-pointer'>View Details</button>
+                    <Link to={`/doctor-details/${doctor.id}`}>
+                        <button className='w-full hover:bg-indigo-500 hover:text-white font-bold text-xl h-10 border border-indigo-600 rounded-3xl text-indigo-600 transition-all cursor-pointer'>View Details</button>
+                    </Link>
+
                 </div>
             </div>
         </div>

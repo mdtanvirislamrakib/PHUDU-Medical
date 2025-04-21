@@ -14,7 +14,7 @@ const Hero = ({handleSearch}) => {
                     setSearchText('')
                 }
                 } className='flex items-center justify-center flex-col lg:flex-row gap-8 w-full'>
-                    <input onChange={(e) => setSearchText(e.target.value)} value={searchText} type="text" placeholder='Search any doctor...' className='h-10 w-2/3 px-2 outline-none focus:shadow-md rounded-2xl border border-gray-200 text-lg' />
+                    <input onChange={(e) => setSearchText(e.target.value)} value={searchText} type="text" placeholder='Search any doctor...' className='h-10 w-full lg:w-2/3 px-2 outline-none focus:shadow-md rounded-2xl border border-gray-200 text-lg' />
                     <button type="submit" className='text-white bg-indigo-600 rounded-3xl px-5 py-2 hover:bg-indigo-800 transition-all cursor-pointer'>Search Now</button>
                 </form>
 

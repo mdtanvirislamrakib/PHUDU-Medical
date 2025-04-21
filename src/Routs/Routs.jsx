@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "../Layout/MainLayout";
 import Home from "../pages/Home/Home";
+import { Component } from "react";
+import DoctorDetails from "../pages/DoctorDetails/DoctorDetails";
 
 
 export const router = createBrowserRouter([
@@ -21,11 +23,13 @@ export const router = createBrowserRouter([
       {
         path: '/blogs',
         element: <p>Blogs section</p>
+      },
+      {
+        path: '/doctor-details/:id',
+        hydrateFallbackElement: <span className="loading loading-spinner loading-lg text-indigo-600 text-center"></span>,
+        loader: () => fetch('../doctorData.json'),
+        Component: DoctorDetails
       }
     ]
   },
-  {
-    path: '/about',
-    element: <p>This is about</p>
-  }
 ]);

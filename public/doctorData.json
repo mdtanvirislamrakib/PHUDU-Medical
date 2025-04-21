@@ -9,7 +9,11 @@
         "designation": "Consultant",
         "workplace": "Square Hospital, Dhaka",
         "fee": "৳1000",
-        "available": "Sun, Tue, Thu (5 PM - 8 PM)",
+        "available": [
+            "Sunday",
+            "Tuesday",
+            "Thursday"
+        ],
         "image": "https://i.ibb.co.com/jPqKJgT3/vecteezy-ai-generated-a-female-doctor-with-a-stethoscope-isolated-on-41409060.png"
     },
     {
@@ -22,7 +26,11 @@
         "designation": "Senior Consultant",
         "workplace": "United Hospital, Dhaka",
         "fee": "৳1500",
-        "available": "Mon, Wed, Sat (4 PM - 7 PM)",
+        "available": [
+            "Monday",
+            "Wednesday",
+            "Saturday"
+        ],
         "image": "https://i.ibb.co.com/671kkgkc/vecteezy-ai-generated-a-smiling-doctor-with-glasses-and-a-white-lab-41408858.png"
     },
     {
@@ -35,7 +43,12 @@
         "designation": "Assistant Professor",
         "workplace": "Dhaka Medical College",
         "fee": "৳800",
-        "available": "Sun to Wed (2 PM - 6 PM)",
+        "available": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday"
+        ],
         "image": "https://i.ibb.co.com/5hkG91GF/vecteezy-ai-generated-portrait-of-docto-young-woman-happy-smiling-41642091.png"
     },
     {
@@ -48,7 +61,14 @@
         "designation": "Associate Professor",
         "workplace": "Bangabandhu Sheikh Mujib Medical University",
         "fee": "৳1200",
-        "available": "Everyday (Except Friday) (6 PM - 9 PM)",
+        "available": [
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+        ],
         "image": "https://i.ibb.co.com/q3Qp0HRx/vecteezy-young-doctor-image-transparent-47307387.png"
     },
     {
@@ -61,7 +81,13 @@
         "designation": "Consultant",
         "workplace": "Ibn Sina Hospital",
         "fee": "৳700",
-        "available": "Sat to Wed (10 AM - 1 PM)",
+        "available": [
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday"
+        ],
         "image": "https://i.ibb.co.com/VY36JC3z/Pngtree-lady-doctor-image-15634533.png"
     },
     {
@@ -74,7 +100,11 @@
         "designation": "Consultant",
         "workplace": "Popular Diagnostic Center",
         "fee": "৳1000",
-        "available": "Sun, Tue, Thu (5 PM - 9 PM)",
+        "available": [
+            "Sunday",
+            "Tuesday",
+            "Thursday"
+        ],
         "image": "https://i.ibb.co.com/jZ5ppHDM/Pngtree-photo-men-doctor-physician-chest-13143575.png"
     },
     {
@@ -87,8 +117,12 @@
         "designation": "Consultant",
         "workplace": "Evercare Hospital",
         "fee": "৳900",
-        "available": "Mon, Wed, Sat (3 PM - 6 PM)",
-        "image": "https://i.ibb.co.com/d4xj35YW/1a8acba7a59e8d49faab248c4a7c619a.png"
+        "available": [
+            "Monday",
+            "Wednesday",
+            "Saturday"
+        ],
+        "image": "https://i.ibb.co.com/2052jw4R/vecteezy-ai-generated-a-female-doctor-with-a-stethoscope-isolated-on-41409068.png"
     },
     {
         "id": 8,
@@ -100,7 +134,13 @@
         "designation": "Assistant Professor",
         "workplace": "Holy Family Red Crescent Hospital",
         "fee": "৳1100",
-        "available": "Sun to Thu (6 PM - 9 PM)",
+        "available": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+        ],
         "image": "https://i.ibb.co.com/FLMtQbzy/vecteezy-young-doctor-image-transparent-47307387-1.png"
     },
     {
@@ -113,7 +153,11 @@
         "designation": "Associate Professor",
         "workplace": "National Institute of Neurosciences",
         "fee": "৳1300",
-        "available": "Mon, Tue, Wed (5 PM - 8 PM)",
+        "available": [
+            "Monday",
+            "Tuesday",
+            "Wednesday"
+        ],
         "image": "https://i.ibb.co.com/svRqfcw9/vecteezy-female-smiling-doctor-isolated-on-transparent-background-52484760.png"
     },
     {
@@ -126,8 +170,15 @@
         "designation": "Consultant",
         "workplace": "BIRDEM General Hospital",
         "fee": "৳1000",
-        "available": "Sat to Thu (6 PM - 8 PM)",
-        "image": "https://i.ibb.co.com/hxNCt1Zk/vecteezy-ai-generated-senior-doctor-man-arms-crossed-with-smile-36094748.png"
+        "available": [
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+        ],
+        "image": "https://i.ibb.co.com/CKddb2xM/vecteezy-a-male-doctor-in-a-white-coat-and-glasses-57225316.png"
     },
     {
         "id": 11,
@@ -139,7 +190,11 @@
         "designation": "Medical Officer",
         "workplace": "Central Hospital, Dhaka",
         "fee": "৳800",
-        "available": "Sat, Mon, Wed (10 AM - 1 PM)",
+        "available": [
+            "Saturday",
+            "Monday",
+            "Wednesday"
+        ],
         "image": "https://i.ibb.co.com/Vcx8vKQJ/vecteezy-ai-generated-a-female-doctor-with-a-stethoscope-isolated-on-41409047.png"
     },
     {
@@ -152,7 +207,11 @@
         "designation": "Professor",
         "workplace": "National Institute of Mental Health",
         "fee": "৳1500",
-        "available": "Sun, Tue, Thu (4 PM - 7 PM)",
+        "available": [
+            "Sunday",
+            "Tuesday",
+            "Thursday"
+        ],
         "image": "https://i.ibb.co.com/yn5nd2vR/vecteezy-confident-bearded-doctor-in-white-coat-with-stethoscope-and-55130495.png"
     }
 ]
