@@ -12,20 +12,20 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu bg-white menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 ">
-                        <NavLink className="hover:text-indigo-500">Home</NavLink>
-                        <NavLink className="hover:text-indigo-500">My-Booking</NavLink>
-                        <NavLink className="hover:text-indigo-500">Blogs</NavLink>
-                        <NavLink className="hover:text-indigo-500">Contact</NavLink>
+                        <NavLink to='/' className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Home</NavLink>
+                        <NavLink to="/my-booking" className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>My-Booking</NavLink>
+                        <NavLink to="/blogs" className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Blogs</NavLink>
+                        <NavLink to="/contact" className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Contact</NavLink>
                     </ul>
                 </div>
                 <div className="  flex items-center gap-2 justify-between">
-                    <img src={logo} alt="" className='w-8' />
+                    <img src={logo} alt="" className='max-w-8' />
                     <h1 className='text-2xl font-bold'>Phudu</h1>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-8 text-lg lg:text-xl font-semibold">
-                    <NavLink to='/'className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Home</NavLink>
+                    <NavLink to='/' className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Home</NavLink>
                     <NavLink to="/my-booking" className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>My-Booking</NavLink>
                     <NavLink to="/blogs" className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Blogs</NavLink>
                     <NavLink to="/contact" className={({ isActive }) => isActive ? "text-indigo-700" : "hover:text-indigo-500"}>Contact</NavLink>

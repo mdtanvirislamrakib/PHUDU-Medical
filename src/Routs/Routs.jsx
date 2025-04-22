@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
       {
         path: "/",
         Component: Home,
-        hydrateFallbackElement: <p>loading...</p>,
+        hydrateFallbackElement: <span className="loading loading-infinity loading-7xl text-indigo-600 min-h-screen flex items-center justify-center mx-auto my-auto"></span>,
         loader: () => fetch('../doctorData.json')
       },
       {
@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/doctor-details/:id',
-        hydrateFallbackElement: <span className="loading loading-spinner loading-lg text-indigo-600 text-center"></span>,
+        hydrateFallbackElement: <span className="loading loading-infinity loading-7xl text-indigo-600 min-h-screen flex items-center justify-center mx-auto my-auto"></span>,
         loader: () => fetch('../doctorData.json'),
         Component: DoctorDetails
       }
