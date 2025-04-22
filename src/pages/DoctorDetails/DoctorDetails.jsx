@@ -16,7 +16,7 @@ const DoctorDetails = () => {
     const dayName = days[dayIndex];
     const isAvailable = singleDoctor.available.includes(dayName)
 
-    
+
     const navigate = useNavigate()
 
     const handleBookings = (e) => {
@@ -26,7 +26,7 @@ const DoctorDetails = () => {
     }
 
     return (
-        <div className='w-10/12 mx-auto my-5 space-y-8'>
+        <div className='w-full lg:w-10/12 mx-auto my-5 space-y-8'>
             <div className='bg-white rounded-2xl p-5 lg:px-20 lg:py-10 flex flex-col items-center justify-center space-y-5'>
                 <h1 className='text-2xl font-bold lg:text-5xl text-center'>Doctor’s Profile Details</h1>
                 <p className='text-sm lg:text-lg font-semibold text-gray-500 text-center'>Becoming a doctor is a meaningful choice because it allows you to heal people, save lives, and make a real difference in your community. It’s a respected and rewarding profession that offers lifelong learning, personal growth, and the opportunity to help others in their most vulnerable moments.</p>

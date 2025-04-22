@@ -4,12 +4,14 @@ import Home from "../pages/Home/Home";
 import { Component } from "react";
 import DoctorDetails from "../pages/DoctorDetails/DoctorDetails";
 import MyBookings from "../pages/My-Bookings/MyBookings";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
