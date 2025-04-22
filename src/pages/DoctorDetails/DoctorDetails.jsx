@@ -1,15 +1,20 @@
 import React from 'react';
 import { NavLink, useLoaderData, useNavigate, useParams } from 'react-router';
 import { BiRegistered } from "react-icons/bi";
-import { addBookings } from '../../Ultilities/Ultilities'
+import { addBookings, getBookings } from '../../Ultilities/Ultilities'
+import toast from 'react-hot-toast';
+
+
 
 const DoctorDetails = () => {
+
+
+
+    const notify = () => toast.success('You Book A Doctor!')
+    const notifyWrong = () => toast.error("You Already booked this doctor")
     const data = useLoaderData();
-
     const { id } = useParams();
-
     const singleDoctor = data.find(doctor => doctor.id === parseInt(id))
-
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const today = new Date();
     const dayIndex = today.getDay();
@@ -19,8 +24,18 @@ const DoctorDetails = () => {
 
     const navigate = useNavigate()
 
+
+
     const handleBookings = (e) => {
         e.preventDefault();
+        const getBooking = getBookings();
+        const check = getBooking.some(booking => booking.id === singleDoctor.id)
+        if (check) {
+            notifyWrong()
+            return
+        } else {
+            notify()
+        }
         addBookings(singleDoctor);
         navigate("/my-booking")
     }

@@ -35,7 +35,6 @@ const NoData = () => {
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
         </>
 
     );

@@ -2,7 +2,6 @@
 import toast from 'react-hot-toast';
 
 const notifyWrong = () => toast.error("You Already booked this doctor")
-const notify = () => toast.success('You Book A Doctor!')
 
 
 
@@ -19,8 +18,6 @@ export const addBookings = doctor => {
     const isExist = bookings.find(d => d.id === doctor.id);
     if (isExist) {
         return notifyWrong()
-    } else {
-        notify()
     }
     bookings.push(doctor);
     localStorage.setItem("bookings", JSON.stringify(bookings))

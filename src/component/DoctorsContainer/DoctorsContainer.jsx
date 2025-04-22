@@ -48,7 +48,7 @@ const DoctorsContainer = ({ doctors }) => {
                     <div className='bg-white rounded-2xl p-5 space-y-2'>
                         <img src={totalDoctors} alt="" className='max-w-16' />
                         <p className='text-lg lg:text-2xl font-bold'>
-                            <CountUp end={199} duration={2.75} /> +
+                            <CountUp end={199} duration={2.75} enableScrollSpy /> +
                         </p>
 
                         <h2 className='text-gray-500 font-bold text-lg lg:text-xl'>Total Doctors</h2>
@@ -57,7 +57,7 @@ const DoctorsContainer = ({ doctors }) => {
                     <div className='bg-white rounded-2xl p-5 space-y-2'>
                         <img src={totalReviews} alt="" className='max-w-16' />
                         <p className='text-lg lg:text-2xl font-bold'>
-                            <CountUp end={467} duration={3.75} /> +
+                            <CountUp end={467} duration={3.75} enableScrollSpy /> +
                         </p>
 
                         <h2 className='text-gray-500 font-bold text-lg lg:text-xl'>Total Doctors</h2>
@@ -66,7 +66,7 @@ const DoctorsContainer = ({ doctors }) => {
                     <div className='bg-white rounded-2xl p-5 space-y-2'>
                         <img src={totalPatinents} alt="" className='max-w-16' />
                         <p className='text-lg lg:text-2xl font-bold'>
-                            <CountUp end={1900} duration={4.75} /> +
+                            <CountUp end={1900} duration={4.75} enableScrollSpy /> +
                         </p>
 
                         <h2 className='text-gray-500 font-bold text-lg lg:text-xl'>Total Doctors</h2>
@@ -75,7 +75,7 @@ const DoctorsContainer = ({ doctors }) => {
                     <div className='bg-white rounded-2xl p-5 space-y-2'>
                         <img src={totalStuffs} alt="" className='max-w-16' />
                         <p className='text-lg lg:text-2xl font-bold'>
-                            <CountUp end={300} duration={3.75} /> +
+                            <CountUp end={300} duration={3.75} enableScrollSpy /> +
                         </p>
 
                         <h2 className='text-gray-500 font-bold text-lg lg:text-xl'>Total Doctors</h2>
