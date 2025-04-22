@@ -63,7 +63,7 @@ const DoctorDetails = () => {
                         <div className='flex items-center gap-4 lg:gap-8 mt-2 lg:mt-4'>
                             <p className='text-sm lg:text-lg font-semibold'>Consultation Fee:</p>
                             <div className='flex items-center gap-1 text-sm lg:text-lg'>
-                                <p className='text-indigo-500 font-bold'>{singleDoctor.fee}</p>
+                                <p className='text-indigo-500 font-bold'>৳ {singleDoctor.fee}</p>
                                 <p className='text-gray-600 font-semibold'>+Included Vat</p>
                             </div>
                         </div>

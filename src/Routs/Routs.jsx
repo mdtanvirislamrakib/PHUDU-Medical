@@ -6,6 +6,7 @@ import DoctorDetails from "../pages/DoctorDetails/DoctorDetails";
 import MyBookings from "../pages/My-Bookings/MyBookings";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Blogs from "../pages/Blogs/Blogs";
+import NoData from "../pages/NoData/NoData";
 
 
 export const router = createBrowserRouter([
@@ -34,9 +35,10 @@ export const router = createBrowserRouter([
         path: '/doctor-details/:id',
         hydrateFallbackElement: <span className="loading loading-infinity loading-7xl text-indigo-600 min-h-screen flex items-center justify-center mx-auto my-auto"></span>,
         loader: () => fetch('../doctorData.json'),
-        Component: DoctorDetails
+        Component: DoctorDetails,
+        errorElement: <NoData></NoData>,
       },
-      
+
     ]
   },
   {

@@ -23,7 +23,7 @@ const ErrorPage = () => {
                     <div className='flex items-center justify-center'>
                         <button onClick={goToHome} className='bg-indigo-700 hover:bg-indigo-900 transition-all border border-indigo-600 rounded-4xl px-3 lg:px-5 py-1 lg:py-2 cursor-pointer text-white font-bold'>Go Back Home</button>
                     </div>
-                    
+
                 </div>
 
             </div>
