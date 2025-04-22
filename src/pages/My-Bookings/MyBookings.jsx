@@ -51,7 +51,7 @@ const MyBookings = () => {
             {
                 displayBooking.length > 0 && <div>
 
-                    <div className='hidden lg:block'>
+                    <div className='mb-5 lg:mb-10'>
                         <Charts displayBooking = {displayBooking}></Charts>
                     </div>
 

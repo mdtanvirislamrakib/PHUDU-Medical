@@ -5,6 +5,7 @@ import { Component } from "react";
 import DoctorDetails from "../pages/DoctorDetails/DoctorDetails";
 import MyBookings from "../pages/My-Bookings/MyBookings";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Blogs from "../pages/Blogs/Blogs";
 
 
 export const router = createBrowserRouter([
@@ -25,14 +26,21 @@ export const router = createBrowserRouter([
       },
       {
         path: '/blogs',
-        element: <p>Blogs section</p>
+        hydrateFallbackElement: <span className="loading loading-infinity loading-7xl text-indigo-600 min-h-screen flex items-center justify-center mx-auto my-auto"></span>,
+        loader: () => fetch('../blogsData.json'),
+        Component: Blogs
       },
       {
         path: '/doctor-details/:id',
         hydrateFallbackElement: <span className="loading loading-infinity loading-7xl text-indigo-600 min-h-screen flex items-center justify-center mx-auto my-auto"></span>,
         loader: () => fetch('../doctorData.json'),
         Component: DoctorDetails
-      }
+      },
+      
     ]
   },
+  {
+    path: "/contact",
+    Component: ErrorPage,
+  }
 ]);
