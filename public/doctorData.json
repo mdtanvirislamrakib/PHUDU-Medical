@@ -8,7 +8,7 @@
         "registration_number": "BMC-12345",
         "designation": "Consultant",
         "workplace": "Square Hospital, Dhaka",
-        "fee": "৳1000",
+        "fee": 1000,
         "available": [
             "Sunday",
             "Tuesday",
@@ -25,7 +25,7 @@
         "registration_number": "BMC-23456",
         "designation": "Senior Consultant",
         "workplace": "United Hospital, Dhaka",
-        "fee": "৳1500",
+        "fee": 1500,
         "available": [
             "Monday",
             "Wednesday",
@@ -42,7 +42,7 @@
         "registration_number": "BMC-34567",
         "designation": "Assistant Professor",
         "workplace": "Dhaka Medical College",
-        "fee": "৳800",
+        "fee": 800,
         "available": [
             "Sunday",
             "Monday",
@@ -60,7 +60,7 @@
         "registration_number": "BMC-45678",
         "designation": "Associate Professor",
         "workplace": "Bangabandhu Sheikh Mujib Medical University",
-        "fee": "৳1200",
+        "fee": 1200,
         "available": [
             "Saturday",
             "Sunday",
@@ -80,7 +80,7 @@
         "registration_number": "BMC-56789",
         "designation": "Consultant",
         "workplace": "Ibn Sina Hospital",
-        "fee": "৳700",
+        "fee": 700,
         "available": [
             "Saturday",
             "Sunday",
@@ -99,7 +99,7 @@
         "registration_number": "BMC-67890",
         "designation": "Consultant",
         "workplace": "Popular Diagnostic Center",
-        "fee": "৳1000",
+        "fee": 1000,
         "available": [
             "Sunday",
             "Tuesday",
@@ -116,7 +116,7 @@
         "registration_number": "BMC-78901",
         "designation": "Consultant",
         "workplace": "Evercare Hospital",
-        "fee": "৳900",
+        "fee": 900,
         "available": [
             "Monday",
             "Wednesday",
@@ -133,7 +133,7 @@
         "registration_number": "BMC-89012",
         "designation": "Assistant Professor",
         "workplace": "Holy Family Red Crescent Hospital",
-        "fee": "৳1100",
+        "fee": 1100,
         "available": [
             "Sunday",
             "Monday",
@@ -152,7 +152,7 @@
         "registration_number": "BMC-90123",
         "designation": "Associate Professor",
         "workplace": "National Institute of Neurosciences",
-        "fee": "৳1300",
+        "fee": 1300,
         "available": [
             "Monday",
             "Tuesday",
@@ -169,7 +169,7 @@
         "registration_number": "BMC-01234",
         "designation": "Consultant",
         "workplace": "BIRDEM General Hospital",
-        "fee": "৳1000",
+        "fee": 1000,
         "available": [
             "Saturday",
             "Sunday",
@@ -189,7 +189,7 @@
         "registration_number": "BMC-11223",
         "designation": "Medical Officer",
         "workplace": "Central Hospital, Dhaka",
-        "fee": "৳800",
+        "fee": 800,
         "available": [
             "Saturday",
             "Monday",
@@ -206,7 +206,7 @@
         "registration_number": "BMC-22334",
         "designation": "Professor",
         "workplace": "National Institute of Mental Health",
-        "fee": "৳1500",
+        "fee": 1500,
         "available": [
             "Sunday",
             "Tuesday",

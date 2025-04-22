@@ -2,7 +2,6 @@ import React from 'react';
 
 
 const Booking = ({ booking, handleDelete }) => {
-    console.log(booking);
 
     return (
         <div className='w-full lg:w-10/12 mx-auto '>

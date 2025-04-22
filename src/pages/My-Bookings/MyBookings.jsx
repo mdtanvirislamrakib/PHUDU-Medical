@@ -4,9 +4,11 @@ import { getBookings, removeBookings } from '../../Ultilities/Ultilities';
 import Booking from '../../component/Booking/Booking';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router';
+import Charts from '../../component/Charts/Charts';
+
+
 const MyBookings = () => {
     const notify = () => toast.error('Cancled Apointment!');
-
 
     const [displayBooking, setDisplayBooking] = useState([])
 
@@ -28,6 +30,9 @@ const MyBookings = () => {
         e.preventDefault()
         navigate("/")
     }
+
+
+    
     return (
         <div className='my-10'>
             {
@@ -45,6 +50,12 @@ const MyBookings = () => {
 
             {
                 displayBooking.length > 0 && <div>
+
+                    <div className='hidden lg:block'>
+                        <Charts displayBooking = {displayBooking}></Charts>
+                    </div>
+
+                    
                     <div>
                         <h1 className='text-2xl lg:text-4xl font-bold text-center'>My Today Appointments</h1>
                         <p className='text-sm lg:text-lg font-semibold text-gray-500 text-center'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience.</p>

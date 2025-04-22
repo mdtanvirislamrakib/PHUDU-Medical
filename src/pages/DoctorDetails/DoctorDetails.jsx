@@ -33,9 +33,9 @@ const DoctorDetails = () => {
             </div>
             <div className='bg-white rounded-2xl'>
                 <div className='flex flex-col lg:flex-row gap-8 lg:px-10 lg:py-8 px-5 py-5'>
-                    <div className='bg-gradient-to-r from-blue-300 to-blue-800 rounded-2xl'>
+                    <div className='bg-gradient-to-r from-blue-300 to-blue-800 rounded-2xl '>
 
-                        <img src={singleDoctor.image} alt="" className='w-[350px] h-fit' />
+                        <img src={singleDoctor.image} alt="" className='w-[350px] max-h-full' />
                     </div>
                     <div>
                         <h1 className='text-2xl lg:text-5xl font-bold mb-3'>{singleDoctor.name}</h1>
