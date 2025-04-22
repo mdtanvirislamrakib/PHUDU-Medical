@@ -12,6 +12,7 @@ const DoctorDetails = () => {
 
     const notify = () => toast.success('You Book A Doctor!')
     const notifyWrong = () => toast.error("You Already booked this doctor")
+    const notifyNotAvailable = () => toast.error("Doctor is not available today")
     const data = useLoaderData();
     const { id } = useParams();
     const singleDoctor = data.find(doctor => doctor.id === parseInt(id))
@@ -19,6 +20,7 @@ const DoctorDetails = () => {
     const today = new Date();
     const dayIndex = today.getDay();
     const dayName = days[dayIndex];
+
     const isAvailable = singleDoctor.available.includes(dayName)
 
 
@@ -28,16 +30,22 @@ const DoctorDetails = () => {
 
     const handleBookings = (e) => {
         e.preventDefault();
-        const getBooking = getBookings();
-        const check = getBooking.some(booking => booking.id === singleDoctor.id)
-        if (check) {
-            notifyWrong()
-            return
+        if (isAvailable) {
+            const getBooking = getBookings();
+            const check = getBooking.some(booking => booking.id === singleDoctor.id)
+            if (check) {
+                notifyWrong()
+                return
+            } else {
+                notify()
+            }
+            addBookings(singleDoctor);
+            navigate("/my-booking")
         } else {
-            notify()
+            notifyNotAvailable()
+            return
         }
-        addBookings(singleDoctor);
-        navigate("/my-booking")
+
     }
 
     return (
@@ -96,7 +104,7 @@ const DoctorDetails = () => {
 
                             {isAvailable && <p className='bg-sky-100 lg:px-3 px-2 py-1 lg:py-2 text-xs lg:text-lg text-green-400 font-semibold border-green-400 rounded-2xl'>Available</p>}
 
-                            {!isAvailable && <p className='bg-sky-100 lg:px-3 px-2 py-1 lg:py-2 text-xs lg:text-lg text-orange-400 font-semibold border-orange-400 rounded-2xl'>Not Available</p>}
+                            {!isAvailable && <p className='bg-sky-100 lg:px-3 px-2 py-1 lg:py-2 text-xs lg:text-lg text-orange-400 font-semibold border-orange-400 rounded-2xl'>Unavailable</p>}
 
                             {/* <p className='bg-gray-100 lg:px-3 px-2 py-1 lg:py-2 text-xs lg:text-lg text-green-400 font-semibold border-green-400 rounded-2xl'>{isAvailable ? "Doctor Available Today" : "Doctor is not Available Today"}</p> */}
                         </div>
