@@ -1,7 +1,15 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
 import { NavLink } from 'react-router';
+import Swal from 'sweetalert2'
 const Navbar = () => {
+    const handlefeature = () => {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "This feature is Unavailable Now!!",
+        });
+    }
     return (
         <div className="navbar lg:w-10/12 lg:mx-auto py-5">
             <div className="navbar-start">
@@ -32,7 +40,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button type="submit" className='text-white bg-indigo-600 rounded-3xl px-5 py-2 hover:bg-indigo-800 transition-all cursor-pointer'>Emergency</button>
+                <button onClick={handlefeature} type="submit" className='text-white bg-indigo-600 rounded-3xl px-5 py-2 hover:bg-indigo-800 transition-all cursor-pointer'>Emergency</button>
             </div>
         </div>
     );
