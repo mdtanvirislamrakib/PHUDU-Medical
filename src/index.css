@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    font-family: "Space Grotesk", sans-serif;
+}
 .hero-background {
     background: linear-gradient(180.00deg, rgba(255, 255, 255, 0),rgb(255, 255, 255) 100%);
 }

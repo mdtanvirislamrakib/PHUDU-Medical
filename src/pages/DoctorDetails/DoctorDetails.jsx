@@ -78,7 +78,7 @@ const DoctorDetails = () => {
                         </div>
                         <div className='border border-gray-200 border-dashed'></div>
                     </div>
-                    <button className='w-full hover:bg-indigo-500 hover:text-white font-bold text-xl h-10 border border-indigo-600 rounded-3xl text-indigo-600 transition-all cursor-pointer mt-5'>Book Appointment Now</button>
+                    <button className='w-full bg-indigo-600 text-white font-bold text-xl h-10 border border-indigo-600 rounded-3xl hover:bg-indigo-800  transition-all cursor-pointer mt-5'>Book Appointment Now</button>
                 </div>
             </div>
 
