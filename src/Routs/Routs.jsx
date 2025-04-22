@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../pages/Home/Home";
 import { Component } from "react";
 import DoctorDetails from "../pages/DoctorDetails/DoctorDetails";
+import MyBookings from "../pages/My-Bookings/MyBookings";
 
 
 export const router = createBrowserRouter([
@@ -18,7 +19,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/my-booking",
-        element: <p>my booking</p>
+        Component: MyBookings,
       },
       {
         path: '/blogs',

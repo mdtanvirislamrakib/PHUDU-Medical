@@ -1,6 +1,7 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { NavLink, useLoaderData, useNavigate, useParams } from 'react-router';
 import { BiRegistered } from "react-icons/bi";
+import { addBookings } from '../../Ultilities/Ultilities'
 
 const DoctorDetails = () => {
     const data = useLoaderData();
@@ -13,8 +14,14 @@ const DoctorDetails = () => {
     const today = new Date();
     const dayIndex = today.getDay();
     const dayName = days[dayIndex];
-
+    const navigate = useNavigate()
     const isAvailable = singleDoctor.available.includes(dayName)
+
+    const handleBookings = (e) => {
+        e.preventDefault();
+        addBookings(singleDoctor);
+        navigate("/my-booking")
+    }
 
     return (
         <div className='w-10/12 mx-auto my-5 space-y-8'>
@@ -78,7 +85,10 @@ const DoctorDetails = () => {
                         </div>
                         <div className='border border-gray-200 border-dashed'></div>
                     </div>
-                    <button className='w-full bg-indigo-600 text-white font-bold text-xl h-10 border border-indigo-600 rounded-3xl hover:bg-indigo-800  transition-all cursor-pointer mt-5'>Book Appointment Now</button>
+
+                    <button onClick={handleBookings} className='w-full bg-indigo-600 text-white font-bold text-xl h-10 border border-indigo-600 rounded-3xl hover:bg-indigo-800  transition-all cursor-pointer mt-5'>Book Appointment Now</button>
+
+
                 </div>
             </div>
 
