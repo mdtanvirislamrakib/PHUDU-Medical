@@ -14,8 +14,10 @@ const DoctorDetails = () => {
     const today = new Date();
     const dayIndex = today.getDay();
     const dayName = days[dayIndex];
-    const navigate = useNavigate()
     const isAvailable = singleDoctor.available.includes(dayName)
+
+    
+    const navigate = useNavigate()
 
     const handleBookings = (e) => {
         e.preventDefault();
