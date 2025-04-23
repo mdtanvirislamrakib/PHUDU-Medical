@@ -23,6 +23,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/my-booking",
+        hydrateFallbackElement: <span className="loading loading-infinity loading-7xl text-indigo-600 min-h-screen flex items-center justify-center mx-auto my-auto"></span>,
         Component: MyBookings,
       },
       {
