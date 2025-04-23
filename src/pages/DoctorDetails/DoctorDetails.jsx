@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, useLoaderData, useNavigate, useParams } from 'react-router';
 import { BiRegistered } from "react-icons/bi";
 import { addBookings, getBookings } from '../../Ultilities/Ultilities'
+import { CiCircleAlert } from "react-icons/ci";
 import toast from 'react-hot-toast';
 
 
@@ -109,9 +110,14 @@ const DoctorDetails = () => {
                             {/* <p className='bg-gray-100 lg:px-3 px-2 py-1 lg:py-2 text-xs lg:text-lg text-green-400 font-semibold border-green-400 rounded-2xl'>{isAvailable ? "Doctor Available Today" : "Doctor is not Available Today"}</p> */}
                         </div>
                         <div className='border border-gray-200 border-dashed'></div>
+
+                        <div className='flex items-center gap-2 bg-gray-50 border border-orange-200 text-center lg:text-sm justify-center rounded-3xl py-1 text-xs text-orange-400 mt-4'>
+                            <CiCircleAlert />
+                            <p>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
+                        </div>
                     </div>
 
-                    <button onClick={handleBookings} className='w-full bg-indigo-600 text-white font-bold text-xl h-10 border border-indigo-600 rounded-3xl hover:bg-indigo-800  transition-all cursor-pointer mt-5'>Book Appointment Now</button>
+                    <button onClick={handleBookings} className='w-full bg-indigo-600 text-white font-bold text-xl h-10 border border-indigo-600 rounded-3xl hover:bg-indigo-800  transition-all cursor-pointer mt-3'>Book Appointment Now</button>
 
 
                 </div>
