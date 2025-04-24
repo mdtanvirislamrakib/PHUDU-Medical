@@ -3,6 +3,13 @@ import { FaRegRegistered } from "react-icons/fa6";
 import { Link } from 'react-router';
 
 const DoctorCard = ({ doctor }) => {
+
+    const days =  ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const today = new Date();
+    const dayIndex = today.getDay();
+    const dayName = days[dayIndex];
+
+    const isAvailable = doctor.available.includes(dayName)
     return (
         <div>
             <div className="card bg-base-100 shadow-sm pt-5">
@@ -13,7 +20,7 @@ const DoctorCard = ({ doctor }) => {
                 </figure>
                 <div className="card-body">
                     <div className='flex items-center gap-4'>
-                        <div className='bg-sky-50 border border-lime-500 text-green-500 py-1 px-2 rounded-2xl'>Available</div>
+                        <div>{isAvailable ? (<p className='bg-sky-50 border border-lime-500 text-green-500 py-1 px-2 rounded-2xl'>Available</p>) : (<p className='bg-sky-50 border border-orange-500 text-orange-500 py-1 px-2 rounded-2xl'>Unavailable</p>)}</div>
                         <div className='bg-sky-100 border border-indigo-500 text-indigo-500 py-1 px-2 rounded-2xl'>{doctor.experience} Experience</div>
                     </div>
                     <h2 className="card-title text-xl font-bold">{doctor.name}</h2>

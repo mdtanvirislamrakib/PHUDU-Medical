@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
 
 
@@ -27,16 +27,16 @@ const Charts = ({ displayBooking }) => {
     };
     return (
         <div className='w-full lg:w-11/12 mx-auto'>
-            <ResponsiveContainer 
-                    width="100%"
-                    height={300}
-                    margin="auto">
-                <BarChart
-                    data={data}
-                >
+            <ResponsiveContainer
+                width="100%"
+                height={300}
+                margin="auto">
+                <BarChart data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" className='text-xs' />
                     <YAxis />
+                    <Tooltip />
+                    <Legend />
                     <Bar dataKey="fee" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                         {data.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={colors[index % 20]} />
