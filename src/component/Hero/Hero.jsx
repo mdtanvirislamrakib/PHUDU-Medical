@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import bannerImage from '../../assets/banner-img-1.png'
+import secoundBannerImage from '../../assets/banner-image-2.jpg'
 
 const Hero = ({handleSearch}) => {
     const [searchText, setSearchText] = useState('')
@@ -18,9 +19,9 @@ const Hero = ({handleSearch}) => {
                     <button type="submit" className='text-white bg-indigo-600 rounded-3xl px-5 py-2 hover:bg-indigo-800 transition-all cursor-pointer'>Search Now</button>
                 </form>
 
-                <div className='flex items-center justify-center gap-8'>
+                <div className='flex items-center justify-center gap-6'>
                     <img src={bannerImage} alt="" />
-                    <img src={bannerImage} alt="" className='hidden lg:block' />
+                    <img src={secoundBannerImage} alt="" className='rounded-xl hidden lg:block' />
                 </div>
 
             </div>

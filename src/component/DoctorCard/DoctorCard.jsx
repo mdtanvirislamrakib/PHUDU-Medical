@@ -20,7 +20,7 @@ const DoctorCard = ({ doctor }) => {
                 </figure>
                 <div className="card-body">
                     <div className='flex items-center gap-4'>
-                        <div>{isAvailable ? (<p className='bg-sky-50 border border-lime-500 text-green-500 py-1 px-2 rounded-2xl'>Available</p>) : (<p className='bg-sky-50 border border-orange-500 text-orange-500 py-1 px-2 rounded-2xl'>Unavailable</p>)}</div>
+                        <div>{isAvailable ? (<p className='bg-sky-50 border border-green-600 text-green-500 py-1 px-2 rounded-2xl'>Available</p>) : (<p className='bg-sky-50 border border-red-500 text-red-500 py-1 px-2 rounded-2xl'>Unavailable</p>)}</div>
                         <div className='bg-sky-100 border border-indigo-500 text-indigo-500 py-1 px-2 rounded-2xl'>{doctor.experience} Experience</div>
                     </div>
                     <h2 className="card-title text-xl font-bold">{doctor.name}</h2>
