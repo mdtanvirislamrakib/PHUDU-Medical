@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Hero from '../../component/Hero/Hero';
 import DoctorsContainer from '../../component/DoctorsContainer/DoctorsContainer';
 import { useLoaderData } from 'react-router';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     const data = useLoaderData()
@@ -24,6 +25,9 @@ const Home = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Phudu|Home</title>
+            </Helmet>
             {
                 loading ? (<span className="loading loading-infinity w-10 md:w-14 lg:w-24 text-indigo-600 min-h-screen flex items-center justify-center mx-auto my-auto"></span>) : (<div>
                     <Hero handleSearch = {handleSearch}></Hero>

@@ -5,6 +5,7 @@ import Booking from '../../component/Booking/Booking';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router';
 import Charts from '../../component/Charts/Charts';
+import { Helmet } from 'react-helmet-async';
 
 
 const MyBookings = () => {
@@ -39,6 +40,9 @@ const MyBookings = () => {
 
     return (
         <div className='my-10'>
+            <Helmet>
+                <title>phudu | booking</title>
+            </Helmet>
             {
                 loading ? (<span className="loading loading-infinity w-10 md:w-14 lg:w-24 text-indigo-600 min-h-screen flex items-center justify-center mx-auto my-auto"></span>) : (<div>
                     {

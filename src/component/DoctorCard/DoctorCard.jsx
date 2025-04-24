@@ -25,6 +25,7 @@ const DoctorCard = ({ doctor }) => {
                     </div>
                     <h2 className="card-title text-xl font-bold">{doctor.name}</h2>
                     <p className='text-gray-500 font-semibold text-lg'>{doctor.education}</p>
+                    <p className='text-gray-500 font-semibold text-lg'>{doctor.speciality}</p>
                     <div className='border border-gray-300 border-dashed'></div>
                     <div className='flex items-center gap-3 text-lg text-gray-600 font-semibold'>
                         <FaRegRegistered />
