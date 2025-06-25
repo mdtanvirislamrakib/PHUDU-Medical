@@ -52,5 +52,5 @@ This project presents a sleek and responsive design tailored for healthcare-rela
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone [https://github.com/yourusername/medicare-website.git](https://github.com/mdtanvirislamrakib/PHUDU-Medical)  
+git clone [https://github.com/yourusername/medicare-website.git](https://github.com/mdtanvirislamrakib/PHUDU-Medical)
 cd medicare-website
