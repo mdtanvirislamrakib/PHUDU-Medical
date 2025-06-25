@@ -1,6 +1,4 @@
-# Create a professional README file for the medical website (frontend only with React)
 
-medical_readme = """
 # 🏥 MediCare - A Modern Medical Website
 
 **MediCare** is a responsive, frontend-only medical web application built using modern web technologies like React and Tailwind CSS. It is designed to provide a clean, intuitive, and professional user interface for showcasing medical services, doctor profiles, statistics, and health-related content.
